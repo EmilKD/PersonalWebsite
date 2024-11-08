@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+body {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    height: 100%; /* Allow full height for the content */
+    margin: 0;
+    position: relative;
+    overflow-y: scroll; /* Enable scrolling */
+    min-height: 100vh; /* Ensure content takes at least full height */
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;  /* Ensure the canvas covers the entire viewport width */
+    height: auto; /* Ensure the canvas covers the entire viewport height */
+    z-index: -1; /* Canvas stays in the background */
+    pointer-events: none; /* Prevent canvas from interfering with interactions */
+}
+
+.container {
+    position: relative;
+    z-index: 1; /* Place resume content above the canvas */
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: white;
+    padding-bottom: 50px; /* Add extra padding to ensure content doesn't overlap footer */
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    background-color: #2e2e2e;
+    border-bottom: 2px solid #444;
+    z-index: 2;
+}
+
+header img {
+    border-radius: 50%;
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border: 3px solid #ffcc00; /* Lighter amber color */
+    margin-right: 20px;
+}
+
+.profile-info {
+    text-align: center;
+}
+
+.profile-info h1 {
+    font-size: 2.5em;
+    color: #ffcc00; /* Lighter amber color */
+    margin-bottom: 8px;
+}
+
+.profile-info p {
+    font-size: 1em;
+    color: #aaaaaa;
+}
+
+nav a {
+    color: #ffcc00;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+nav a:hover,
+nav a:focus {
+    text-decoration: underline;
+    outline: none;
+}
+
+.section {
+    margin-top: 30px;
+}
+
+.section-title {
+    font-size: 1.4em;
+    color: #cccccc;
+    margin-bottom: 12px;
+    border-bottom: 2px solid #555555;
+    padding-bottom: 5px;
+}
+
+.subsection {
+    margin-top: 10px;
+}
+
+.subsection-title {
+    font-size: 1.2em;
+    color: #e0e0e0;
+    margin-bottom: 8px;
+}
+
+.subsection p {
+    margin-bottom: 8px;
+    color: #aaaaaa;
+}
+
+.skills {
+    margin-top: 15px;
+}
+
+.skills span {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 8px 15px;
+    background-color: #444;
+    border-radius: 15px;
+    color: #f0f0f0;
+    font-size: 0.9em;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2e2e2e;
+    margin-top: 30px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
