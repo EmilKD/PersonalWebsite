@@ -151,7 +151,7 @@ function gravitySwitch(){
 function WorldSetup(){
     var NumberOfBalls = 100;
     var MinBallSize = 0.2;
-    var MaxBallSize = 0.6;
+    var MaxBallSize = 0.4;
     var MaxVelocity = 10;
     // var BallDensity = 1;
     var Allowed = true;
