@@ -61,8 +61,12 @@
             color: #ffc107;
         }
         .project-info a {
-            color: #ffc107;
+            color: #9fe6bf;
             text-decoration: none;
+        }
+        .project-info a i {
+            margin-right: 5px; /* Adds spacing between the icon and text */
+            font-size: 1em; /* Adjust icon size as needed */
         }
         .project-info a:hover {
             text-decoration: underline;
@@ -71,29 +75,168 @@
 </head>
 <body>
     <header>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
         <h1>Projects</h1>
-        <p><a href="index.html" style="color: #ffc107;">Back to Resume</a></p>
+        <p><a href="index.html" style="color: #ffc107;"><i class="fa fa-home"></i> Back to Homepage</a></p>       
     </header>
 
     <div class="container">
         <section class="section">
             <div class="section-title">Selected Projects</div>
+            
+            <!-- Real-time Eulerian Fluid Simulation -->
             <div class="project">
-                <img src="https://via.placeholder.com/100" alt="Project Thumbnail">
+                <img src="Images/Projects/EulerianFluidSimulation.gif" alt="Project Thumbnail">
                 <div class="project-info">
                     <h3>Real-time Eulerian Fluid Simulation</h3>
-                    <p>Visualization using OpenGL and GLFW with Simplified Euler method.</p>
-                    <p><a href="https://github.com/EmilKD/EulerianFluidSim" target="_blank">View on GitHub</a></p>
+                    <p>Visualization using OpenGL and GLFW</p>
+                    <p><a href="https://github.com/EmilKD/EulerianFluidSim" target="_blank">View on GitHub <i class="fab fa-github"></i></a></p>
                 </div>
+                <span class="project-date">Aug 2024</span>
             </div>
+
+            <!-- Game Engine Development -->
+            <div class="project">
+                <img src="Images/Projects/Oasis.png" alt="Project Thumbnail">
+                <div class="project-info">
+                    <h3>Game Engine Development</h3>
+                    <p>Rendering system developed using OpenGL and object-oriented shader management.</p>
+                    <p><a href="https://github.com/EmilKD/Oasis" target="_blank">View on GitHub <i class="fab fa-github"></i></a></p>
+                </div>
+                <span class="project-date">Jul 2024</span>
+            </div>
+
+            <!-- 2D Position Based Dynamics Simulation -->
+            <div class="project">
+                <img src="Images/Projects/Constrained Dynamics.gif" alt="Project Thumbnail">
+                <div class="project-info">
+                    <h3>2D Position Based Dynamics Simulation</h3>
+                    <p>Easy visualization using JSON and HTML; object-oriented constrained and dynamic objects</p>
+                    <p><a href="https://github.com/EmilKD/TenMinutePhysicsProjects" target="_blank">View on GitHub <i class="fab fa-github"></i></a></p>
+                </div>
+                <span class="project-date">Aug 2024</span>
+            </div>
+
+            <!-- Real-time Soft Body Simulation -->
+            <div class="project">
+                <img src="Images/Projects/Plastic Deformation.gif" alt="Project Thumbnail">
+                <div class="project-info">
+                    <h3>Real-time Soft Body Simulation with a Mass-Spring System</h3>
+                    <p>Developed with C++ and GLM library for GPU-based fast computations.</p>
+                    <p><a href="https://github.com/EmilKD/SpringMassSystem" target="_blank">View on GitHub <i class="fab fa-github"></i></a></p>
+                </div>
+                <span class="project-date">Sep 2023</span>
+            </div>
+
+            <!-- Conway’s Game of Life -->
+            <div class="project">
+                <img src="Images/Projects/GameOfLife.jpg" alt="Project Thumbnail">
+                <div class="project-info">
+                    <h3>Conway’s Game of Life</h3>
+                    <p>Visualization using OpenGL and GLFW, C++ and GLM used for GPU-based fast computations.</p>
+                    <p><a href="https://github.com/EmilKD/Pathfinder" target="_blank">View on GitHub <i class="fab fa-github"></i></a></p>
+                </div>
+                <span class="project-date">May 2024</span>
+            </div>
+
+            <!-- Topology optimization -->
             <div class="project">
                 <img src="https://via.placeholder.com/100" alt="Project Thumbnail">
                 <div class="project-info">
-                    <h3>Game Engine Development</h3>
-                    <p>Custom rendering system using OpenGL and object-oriented shader management.</p>
-                    <p><a href="https://github.com/EmilKD/Oasis" target="_blank">View on GitHub</a></p>
+                    <h3>Topology optimization</h3>
+                    <p>A recreation of the famous 88 line optimization paper</p>
                 </div>
+                <span class="project-date">Feb 2023</span>
             </div>
+
+            <!-- Hand Gestures Detection Convolutional Neural Network -->
+            <div class="project">
+                <img src="https://via.placeholder.com/100" alt="Project Thumbnail">
+                <div class="project-info">
+                    <h3>Hand Gestures Detection Convolutional Neural Network</h3>
+                    <p>Models created using the TensorFlow Python library, Bare CNN and ResNet50 trained and compared.</p>
+                    <p><a href="https://drive.google.com/file/d/1iQZFrJ1JV46GwI72qaMWCGQ6OWSA0TX0/view" target="_blank">View Project <i class="fas fa-file-pdf"></i></a></p>
+                </div>
+                <span class="project-date">May 2024</span>
+            </div>
+
+            <!-- Virtual Robot Pathfinding Project -->
+            <div class="project">
+                <img src="https://via.placeholder.com/100" alt="Project Thumbnail">
+                <div class="project-info">
+                    <h3>Virtual Robot Pathfinding Project</h3>
+                    <p>A*, Greedy, Local Search, DFS and BFS algorithms; interactive graphical program</p>
+                    <p><a href="https://github.com/EmilKD/Pathfinder" target="_blank">View on GitHub <i class="fab fa-github"></i></a></p>
+                </div>
+                <span class="project-date">May 2024</span>
+            </div>
+
+            <!-- Experimental Modal Analysis of a Steel Rod -->
+            <div class="project">
+                <img src="https://via.placeholder.com/100" alt="Project Thumbnail">
+                <div class="project-info">
+                    <h3>Experimental Modal Analysis of a Steel Rod and FEM Validation</h3>
+                    <p>Analyzed FRFs using various methods; FEM simulation performed with Abaqus.</p>
+                    <p><a href="https://drive.google.com/file/d/1iQZFrJ1JV46GwI72qaMWCGQ6OWSA0TX0/view" target="_blank">View Project <i class="fas fa-file-pdf"></i></a></p>
+                </div>
+                <span class="project-date">Jun 2024</span>
+            </div>
+
+            <!-- LSTM Neural Network for Emotion Detection -->
+            <div class="project">
+                <img src="https://via.placeholder.com/100" alt="Project Thumbnail">
+                <div class="project-info">
+                    <h3>LSTM Neural Network for Emotion Detection from Audio Files</h3>
+                    <p>Created using TensorFlow and Librosa libraries for data augmentation.</p>
+                    <p><a href="https://drive.google.com/file/d/1iQZFrJ1JV46GwI72qaMWCGQ6OWSA0TX0/view" target="_blank">View Project <i class="fas fa-file-pdf"></i></a></p>
+                </div>
+                <span class="project-date">May 2024</span>
+            </div>
+
+            <!-- Analytical Modal Analysis of Two-Dimensional Beam -->
+            <div class="project">
+                <img src="https://via.placeholder.com/100" alt="Project Thumbnail">
+                <div class="project-info">
+                    <h3>Analytical Modal Analysis of Two-Dimensional Beam</h3>
+                    <p>Computed modal parameters for the extracted analytical model and performed FEM simulations.</p>
+                    <p><a href="https://drive.google.com/file/d/1iQZFrJ1JV46GwI72qaMWCGQ6OWSA0TX0/view" target="_blank">View Project <i class="fas fa-file-pdf"></i></a></p>
+                </div>
+                <span class="project-date">Apr 2024</span>
+            </div>
+
+            <!-- Finite Element Simulation of a Piezoelectric Patch -->
+            <div class="project">
+                <img src="https://via.placeholder.com/100" alt="Project Thumbnail">
+                <div class="project-info">
+                    <h3>Finite Element Simulation of a Piezoelectric Patch Attached to a Beam</h3>
+                    <p>Performed modal analysis and FEM simulations using Abaqus.</p>
+                    <p><a href="https://drive.google.com/file/d/1iQZFrJ1JV46GwI72qaMWCGQ6OWSA0TX0/view" target="_blank">View Project <i class="fas fa-file-pdf"></i></a></p>
+                </div>
+                <span class="project-date">Jun 2024</span>
+            </div>
+
+            <!-- Finite Element Analysis of Forces on the Femur -->
+            <div class="project">
+                <img src="https://via.placeholder.com/100" alt="Project Thumbnail">
+                <div class="project-info">
+                    <h3>Finite Element Analysis of Forces on the Femur During a Gait Cycle</h3>
+                    <p>Conducted CAD model cleanup and FEM simulation using Abaqus.</p>
+                    <p><a href="https://drive.google.com/file/d/1iQZFrJ1JV46GwI72qaMWCGQ6OWSA0TX0/view" target="_blank">View Project <i class="fas fa-file-pdf"></i></a></p>
+                </div>
+                <span class="project-date">Feb 2023</span>
+            </div>
+
+            <!-- Blood Flow in an Obstructed Vein FEA -->
+            <div class="project">
+                <img src="https://via.placeholder.com/100" alt="Project Thumbnail">
+                <div class="project-info">
+                    <h3>Blood Flow in an Obstructed Vein Finite Element Analysis</h3>
+                    <p>Performed fluid-structural coupled FEM simulation in Ansys.</p>
+                    <p><a href="https://drive.google.com/file/d/1iQZFrJ1JV46GwI72qaMWCGQ6OWSA0TX0/view" target="_blank">View Project <i class="fas fa-file-pdf"></i></a></p>
+                </div>
+                <span class="project-date">May 2023</span>
+            </div>
+
         </section>
     </div>
 </body>
