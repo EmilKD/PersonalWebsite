@@ -210,3 +210,37 @@ ul {
 li {
     margin-bottom: 8px;
 }
+
+.project {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #2e2e2e;
+            border-radius: 8px;
+        }
+.project img {
+	width: 100px;
+	height: 100px;
+	object-fit: cover;
+	margin-right: 15px;
+	border-radius: 8px;
+}
+.project-info {
+	flex-grow: 1;
+}
+.project-info h3 {
+	margin-bottom: 5px;
+	color: #ffc107;
+}
+.project-info a {
+	color: #9fe6bf;
+	text-decoration: none;
+}
+.project-info a i {
+	margin-right: 5px; /* Adds spacing between the icon and text */
+	font-size: 1em; /* Adjust icon size as needed */
+}
+.project-info a:hover {
+	text-decoration: underline;
+}
