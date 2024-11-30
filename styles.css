@@ -266,11 +266,11 @@ li {
 }
 
 .project img {
-	width: 100px;
-	height: 100px;
+	width: 160px;
+	height: 120px;
 	object-fit: cover;
 	margin-right: 15px;
-	border-radius: 8px;
+	border-radius: 12px;
 }
 
 .project-info {
