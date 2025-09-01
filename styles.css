@@ -100,7 +100,7 @@ header {
     margin: 0 20px;
 }
 
-.content-links { display: flex; flex-direction: column; gap: 10px; }
+.content-links { display: flex; flex-direction: column; }
 .content-links a { color: #ffc107; font-size: 0.9em; }
 
 .profile-container { display: flex; align-items: center; }
