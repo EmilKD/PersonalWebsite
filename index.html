@@ -585,30 +585,55 @@
     
     
     <script>
-    const projectsGrid = document.getElementById("projects");
-    const showMoreBtn = document.getElementById("showMoreBtn");
-    const projects = projectsGrid.querySelectorAll(".project");
-    const initialVisible = 9; 
+        const projectsGrid = document.getElementById("projects");
+        const showMoreBtn = document.getElementById("showMoreBtn");
+        const projects = Array.from(projectsGrid.querySelectorAll(".project"));
 
-    projects.forEach((project, index) => {
-        if (index >= initialVisible) {
-            project.style.display = "none";
+        let expanded = false;
+
+        // Function to calculate number of items in N rows
+        function getVisibleCount(rows = 2) {
+        if (!projects.length) return 0;
+
+        const firstCard = projects[0];
+        const cardHeight = firstCard.offsetHeight;
+        const gap = parseInt(window.getComputedStyle(projectsGrid).rowGap) || 0;
+
+        const rowHeight = cardHeight + gap;
+        const gridWidth = projectsGrid.clientWidth;
+
+        // Calculate number of columns that fit
+        const cardStyle = window.getComputedStyle(firstCard);
+        const cardWidth = firstCard.offsetWidth + parseInt(cardStyle.marginLeft) + parseInt(cardStyle.marginRight);
+
+        const columns = Math.floor(gridWidth / cardWidth) || 1;
+
+        // Total items to show = rows * columns
+        return rows * columns;
         }
-    });
 
-    let expanded = false;
-
-    showMoreBtn.addEventListener("click", () => {
-        expanded = !expanded;
-
+        // Initially hide items beyond first N rows
+        function updateProjects() {
+        const visibleCount = getVisibleCount(2); // default 3 rows
         projects.forEach((project, index) => {
-            if (index >= initialVisible) {
-                project.style.display = expanded ? "flex" : "none";
-            }
+            project.style.display = expanded || index < visibleCount ? "flex" : "none";
+        });
+        }
+
+        // Initial setup
+        updateProjects();
+
+        // Show More / Show Less button
+        showMoreBtn.addEventListener("click", () => {
+        expanded = !expanded;
+        updateProjects();
+        showMoreBtn.textContent = expanded ? "Show Less" : "Show More";
         });
 
-        showMoreBtn.textContent = expanded ? "Show Less" : "Show More";
-    });
-</script>
+        // Recalculate on resize
+        window.addEventListener("resize", () => {
+        if (!expanded) updateProjects();
+        });
+    </script>
 </body>
 </html>
