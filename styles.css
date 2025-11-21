@@ -237,7 +237,7 @@ li { margin-bottom: 8px; }
 .project img {
     display: block;
     width: 100%;          /* preserve your requested size */
-    height: 250px;         /* preserve your requested size */
+    height: 40%;         /* preserve your requested size */
     object-fit: cover;
     margin: 0.25rem auto;  /* small breathing room, centered */
     border-radius: 0;      /* remove rounding from image */
@@ -358,8 +358,9 @@ li { margin-bottom: 8px; }
 /* ---------- Responsive tweaks ---------- */
 @media (max-width: 420px) {
     .project img {
-        width: 120px;
-        height: 90px;
+        width: 100%;
+        height: 40%;
     }
     .project-header { padding: 10px 8px; min-height: 48px; font-size: 0.95rem; }
 }
+
